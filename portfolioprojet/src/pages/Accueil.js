@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Accueil.css';
 import Image from '../assets/Image.png';
-import CV from '../assets/Cv.jpg';
+import CV from '../assets/Cv.pdf';
 
 // Page d'acccueil
 function Accueil() {
@@ -12,7 +12,7 @@ function Accueil() {
         <h1>Coucou! Je m'appelle Faty,<br /> je suis développeuse<br /> Full Stack</h1>
         <p>Ceci est mon portfolio en ligne.</p>
         <div className="button-group">
-          <a href={CV} download="Cv.jpg">
+          <a href={CV} download="Cv.pdf">
             <button className="button">Télécharger CV</button>
           </a>
           <Link to="/apropos">
