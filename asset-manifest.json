@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/fatyofficiel/static/css/main.8f4449eb.css",
+    "main.js": "/fatyofficiel/static/js/main.a3335f8c.js",
+    "static/js/453.989e5f4e.chunk.js": "/fatyofficiel/static/js/453.989e5f4e.chunk.js",
+    "static/media/Artiste.png": "/fatyofficiel/static/media/Artiste.5f3760399ac1f46da202.png",
+    "static/media/Yango.png": "/fatyofficiel/static/media/Yango.846f4b506f843682c27c.png",
+    "static/media/Barca.png": "/fatyofficiel/static/media/Barca.c56dfacfa803a242ee04.png",
+    "static/media/Cv.jpg": "/fatyofficiel/static/media/Cv.a8650b1f230b5c80cfb7.jpg",
+    "static/media/Image.png": "/fatyofficiel/static/media/Image.0044db23e8104484d8b3.png",
+    "static/media/Image2.png": "/fatyofficiel/static/media/Image2.561df522913234c75a93.png",
+    "static/media/Image3.png": "/fatyofficiel/static/media/Image3.1a96d3fcd869cf9bd84a.png",
+    "static/media/Logo.png": "/fatyofficiel/static/media/Logo.8520292fae9a79ffdd36.png",
+    "index.html": "/fatyofficiel/index.html",
+    "main.8f4449eb.css.map": "/fatyofficiel/static/css/main.8f4449eb.css.map",
+    "main.a3335f8c.js.map": "/fatyofficiel/static/js/main.a3335f8c.js.map",
+    "453.989e5f4e.chunk.js.map": "/fatyofficiel/static/js/453.989e5f4e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f4449eb.css",
+    "static/js/main.a3335f8c.js"
+  ]
+}
