@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* Animation de fade in sur toute la page */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.gradient-background {
+  background: linear-gradient(24deg, #a800ff, #000000, #000000, #000000);
+  background-size: 240% 240%;
+  background-position: bottom left;
+  animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 50% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Le titre */
+.text-container h1 {
+  font-family: 'Roboto Mono', monospace;
+  width: 28ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Le body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #000000;
+  padding: 0;
+  overflow-x: hidden;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Le texte */
+p {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Animation de bounce */
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Le container */
+.accueil-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.text-container {
+  flex: 1;
+  padding: 20px;
+  color: #fff;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 90%;
+  max-height: 90%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  animation: bounce 5s ease-in-out infinite;
+}
+
+/* Bouton */
+.button-group {
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #8a2bff;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border: none;
+  padding: 10px 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: ease-out 0.4s;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #8a2bff;
+}
+
+/* Version media queries */
+@media (max-width: 1000px) {
+  .accueil-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icon-group {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .text-container h1 {
+    width: 26ch;
+    text-align: center;
+  }
+
+  .text-container,
+  .image-container {
+    flex: none;
+    width: 100%;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Styles pour les icones */
+.icon-group {
+  display: flex;
+  margin-top: 20px;
+}
+
+.icon-group i {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+}
